@@ -24,6 +24,5 @@ public class Main {
 		Car ferrari = contextCar.getBean(Car.class);
 		System.out.println(ferrari.getBrand());
 
-
 	}
 }
