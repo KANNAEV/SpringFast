@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Primary;
 public class AppConfig {
 
 	@Bean
-	@Primary
+	@Primary // Бин теперь первичный
 	Parrot parrot() {
 		var p = new Parrot();
 		p.setName("Default");
