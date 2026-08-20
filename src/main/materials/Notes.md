@@ -47,10 +47,12 @@
 - Добавление в контекст новых бинов используя существующие в контексте
 
 ```java
-if (condition) {
-    registerBean(b1); //Если условие истинно, добавить в контекст Spring некий бин
-} else {
-    registerBean(b2); //Иначе: добавить в контекст Spring другой бин
+if(condition){
+
+registerBean(b1); //Если условие истинно, добавить в контекст Spring некий бин
+}else{
+
+registerBean(b2); //Иначе: добавить в контекст Spring другой бин
 }
 ```
 
@@ -89,6 +91,7 @@ if (condition) {
 - Внедрение зависимостей бина путем передачи параметра в метод (dependency injection, DI)
 
 ```java
+
 @Bean
 public Person person(Parrot parrot) { // Spring внедряет бин parrot в этот параметр
     Person p = new Person();
@@ -296,6 +299,7 @@ public Person person(Parrot parrot) { // Spring внедряет бин parrot �
 - Для этого бин @Bean помечается как @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 - Для стереотипных аннотаций @Scope аналогично ставится перед классом @Component (или его подтипы)
 - Решает проблему конкурентности доступа к бину
+-
 
 ____
 
@@ -304,10 +308,11 @@ ____
 ```java
 // Шаблон Singleton (классический)
 public class DatabaseConnection {
-private static DatabaseConnection instance;
+    private static DatabaseConnection instance;
 
-    private DatabaseConnection() {}
-    
+    private DatabaseConnection() {
+    }
+
     public static DatabaseConnection getInstance() {
         if (instance == null) {
             instance = new DatabaseConnection();
