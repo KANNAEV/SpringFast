@@ -1,4 +1,4 @@
-package part6_AOP.task1.model;
+package part6_AOP.task2.model;
 
 public class Comment {
 	public String author;
