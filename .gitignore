@@ -1,0 +1,10 @@
+*.idea
+.gradle
+*.build
+*DS_Store
+*.vscode
+Chapter1/gradle/
+Chapter1/build/
+Chapter1/.idea
+Chapter1/gradle/
+
