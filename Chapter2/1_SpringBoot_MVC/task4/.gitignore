@@ -1,0 +1,43 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+.mvn
+mvnw.cmd
+.gitattributes
+
+git restore --staged Chapter2/task1/.gitattributes
+git restore --staged Chapter2/task1/.gitignore
+git restore --staged Chapter2/task1/.mvn/wrapper/maven-wrapper.properties
+git restore --staged Chapter2/task1/mvnw
+git restore --staged Chapter2/task1/mvnw.cmd
